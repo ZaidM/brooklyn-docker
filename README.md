@@ -13,7 +13,7 @@ You can use Brooklyn to install Docker onto an existing machine, or to install D
 
 To use the Brooklyn docker entity for installing docker on the host machine, there is an example blueprint at: [SingleDockerHostExample](https://github.com/cloudsoft/brooklyn-docker/blob/master/docker-examples/src/main/java/io/cloudsoft/docker/example/SingleDockerHostExample.java)
 
-First navigate to the brooklyn-docker entity, then:
+Navigate to the brooklyn-docker entity, then
 
     % mvn clean install
     % cd docker-examples
