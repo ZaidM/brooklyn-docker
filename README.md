@@ -13,13 +13,16 @@ You can use Brooklyn to install Docker onto an existing machine, or to install D
 
 To use the Brooklyn docker entity for installing docker on the host machine, there is an example blueprint at: [SingleDockerHostExample](https://github.com/cloudsoft/brooklyn-docker/blob/master/docker-examples/src/main/java/io/cloudsoft/docker/example/SingleDockerHostExample.java)
 
+First navigate to the brooklyn-docker entity, then:
+
+    % mvn clean install
     % cd docker-examples
     % mvn clean install assembly:single
 
     % cd target
     % tar zxvf brooklyn-docker-examples-0.1.0-SNAPSHOT-dist.tar.gz
     % cd brooklyn-docker-examples-0.1.0-SNAPSHOT
-    % ./start.sh launch --docker --location <target>
+    % ./start.sh launch --docker --location <favouriteCloud>
 
 Where `<favouriteCloud>` can be e.g. `jclouds:softlayer`, or a named location or a fixed IP e.g. `byon:(hosts="1.2.3.4")`.
 Those simple steps will give you a running docker instance on your favourite cloud.
